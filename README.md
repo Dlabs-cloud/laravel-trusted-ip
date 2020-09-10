@@ -29,20 +29,25 @@ Although You can also directly call the class  in you route.
 
 You can then guard your route as you wish   
   
+  ```bash
  Route::get('/trusted-ip', 'TestController@trustedIp')->middleware('trusted.ip.address');  
- 
+  ``` 
+
 ***The trusted Ip also allow parameters to be passed to it.***  
   
+   ```bash
  Route::get('/trusted-ip', 'TestController@trustedIp')->middleware('trusted.ip.address: reliance');  *This will check if the client IP making the request matches the name **reliance** on the trusted IP table.*  
-  
+   ``` 
 **NB:** If no param is passed to the middleware it will only validate if the client IP exist on the trusted_ip_address table.   
   
 **`If you think you will have many clients that will be hitting that end point you can pass multiple IP names.`**  
-  
+   ```bash
  Route::get('/trusted-ip', 'TestController@trustedIp')>middleware('trusted.ip.address:paystack,monify,interswitch');  
+  ``` 
+
 Intesting right?  
   
 ## Test  
   
 🙆🏿‍♂️😭😭😭😭😭😭😭😭😭😭😭  
-No test, zero test coverage. But coming soon
+No test, zero test coverage. But coming soon.
