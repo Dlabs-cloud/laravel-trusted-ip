@@ -45,7 +45,7 @@ You can then guard your route as you wish
  Route::get('/trusted-ip', 'TestController@trustedIp')>middleware('trusted.ip.address:paystack,monify,interswitch');  
   ``` 
 
-Intesting right?  
+Interesting  right?  
   
 ## Test  
   
