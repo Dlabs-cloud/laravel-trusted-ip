@@ -1,7 +1,7 @@
-## Trusted IP Address.  
+## Laravel-Trusted-Ip.  
 Allow only your trusted IP address access services in real time. Update and change data base values from the db layer intead of accessing .env every time.   
   
-  Ths package is IPAware and allows you to retrict Ips else only allow registered Ips
+  Ths package is IPAware and allows you to restrict Ips else only allow Ips that have been registered.
   
 
 ## Installation
